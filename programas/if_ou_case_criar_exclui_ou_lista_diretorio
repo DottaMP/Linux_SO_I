@@ -1,0 +1,23 @@
+# Fazer um programa que recebe um número e cria o diretório dirb se o número for 0, 
+# apaga esse diretório se o número for 1 e lista os arquivos do diretório corrente 
+# se o número for maior que 1.
+
+#!/bin/sh
+if [ $1 -eq 0 ]; # Se igual a 0 cria dirb
+    then 
+    mkdir dirb; 
+elif [ $1 -eq 1 ]; # Se igual a 1 apaga o diretorio dirb
+    then 
+    rmdir dirb; # ou rm -r
+else # Senão lista o diretório corrente
+    ls; 
+fi
+exit 0
+
+# Outro jeito utilizando case
+# case $1 in
+# 0) mkdir dirb;;
+# 1) rmdir dirb;;
+# *) ls
+# esac
+# exit 0

@@ -1,0 +1,10 @@
+# Fazer um programa que mostre a contagem de 1 a 20 (usando for).
+
+#!/bin/sh
+for cont in $(seq 1 20) #Sequencia de 1 a 20
+do 
+    echo "$cont"
+    sleep 0.2
+done
+
+exit 0

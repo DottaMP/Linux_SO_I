@@ -1,0 +1,4 @@
+#Fazer um programa que apaque um diretório, mesmo que ele não esteja vazio
+#!/bin/sh
+rm -r $1
+exit 0

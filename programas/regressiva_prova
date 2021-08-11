@@ -1,0 +1,13 @@
+# Faça um programa que receba dois números e faça a contagem 
+# regressiva do último número até o primeiro.
+
+#!/bin/sh
+NUM1=$1
+NUM2=$2
+while [ $NUM2 -ge $NUM1 ] 
+do
+    echo "$NUM2"
+    NUM2=$((NUM2-1))
+done
+
+exit 0  

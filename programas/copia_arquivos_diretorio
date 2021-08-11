@@ -1,0 +1,7 @@
+#Faça um programa que receba o nome de dois diretórios, 
+#crie o segundo e copia todos os arquivos do primeiro para o segundo.
+
+#!/bin/sh
+mkdir $2
+cp -r $1/* $2
+exit 0

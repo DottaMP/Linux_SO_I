@@ -1,0 +1,16 @@
+#!/bin/sh
+#$1 = número
+#$2 = 1º dir
+#$3 = 2º dir
+#$4 = 3º dir
+
+#!/bin/sh
+case $1 in
+0) mkdir $2
+cp $3/f* $2;;
+1) cp $4/b* $3;;
+2) ls $4;;
+3) ls $3;;
+*) echo "Formato do comando é número. O número deve ser de 0 a 3, primeiro, segundo e terceiro são nomes de diretórios";;
+esac
+exit 0

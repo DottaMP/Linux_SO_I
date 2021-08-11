@@ -1,0 +1,10 @@
+# Fazer um programa que exiba a contagem progressiva de 1 até o número digitado com o programa (usando for).
+
+#!/bin/sh
+for cont in $(seq 1 "$1")
+do 
+    echo "$cont"
+    sleep 0.2
+done
+
+exit 0

@@ -1,0 +1,12 @@
+# Fazer um programa que receba a nota do aluno e imprima se ele está aprovado ou reprovado.
+
+#!/bin/sh
+NOTA="$1"
+if [ $NOTA -ge 6 -a $NOTA -le 10 ]; # Valor entre 6 e 10
+    then 
+    echo ' Aluno Aprovado '; 
+elif [ $NOTA -lt 6 -a $NOTA -ge 0 ]; # Valor entre 5 e 0
+    then 
+    echo ' Aluno Reprovado '; 
+fi
+exit 0

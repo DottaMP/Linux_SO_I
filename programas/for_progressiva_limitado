@@ -1,0 +1,16 @@
+# Mayara Pereira Dotta
+# Matrícula (RA): 2040482023049
+# Curso: ADS 204-20202 (Noite)
+# Fazer um programa que exiba a contagem progressiva de 1 até o número digitado, limitado a 15 (usando for).
+#!/bin/sh
+cont=$1
+for cont in $(seq 1 "$cont")
+do 
+    if [ $cont -gt 15 ];
+        then 
+        break
+    fi
+echo "$cont"
+sleep 0.2
+done
+exit 0

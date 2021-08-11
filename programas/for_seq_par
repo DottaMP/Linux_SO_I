@@ -1,0 +1,10 @@
+# Fazer um programa que imprima os números pares de 2 a 22.
+
+#!/bin/sh
+for cont in $(seq 2 2 22) #Sequencia de 2 a 22 - Apenas numeros pares.
+do 
+    echo "$cont"
+    sleep 0.2
+done
+
+exit 0

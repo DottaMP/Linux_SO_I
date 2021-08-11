@@ -1,0 +1,11 @@
+#Fazer um  programa que receba um  número de 1 a 3, e escreva 
+#primeiro para o número 1, segundo para o número 2 e terceiro para o número 3.
+
+#!/bin/sh
+case $1 in
+1) echo "Primeiro";;
+2) echo "Segundo";;
+3) echo "Terceiro";;
+*) echo "Opcao Invalida!";;
+esac
+exit 0

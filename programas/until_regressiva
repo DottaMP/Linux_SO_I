@@ -1,0 +1,12 @@
+# Fazer um programa que receba um número e imprima a contagem regressiva até chega a 7 (usando until).
+
+#!/bin/sh
+NUM="$1"
+echo "$NUM"
+until [ $NUM -le 7 ] 
+do
+    sleep 0.5
+    NUM=$((NUM-1))
+    echo "$NUM"
+done
+exit 0

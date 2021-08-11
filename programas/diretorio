@@ -1,0 +1,24 @@
+# Fazer um programa que recebe um número e o nome de um diretório. 
+# Ele cria esse diretório se o número for 0, apaga esse diretório 
+# se o número for 1 e lista os arquivos do desse diretório se o número for maior que 1.
+
+#!/bin/sh
+if [ $1 -eq 0 ]; # Se igual a 0 cria o diretorio digitado
+    then 
+    mkdir $2; 
+elif [ $1 -eq 1 ]; # Se igual a 1 apaga o diretorio digitado
+    then 
+    rm -r $2;  
+else # Senão lista o diretório criado
+    cp Ada_Lovelace $2 # antes de listar copia um arquivo para o diretorio criado para poder listar algo
+    ls $2; 
+fi
+exit 0
+
+# Outro jeito com case
+#case $1 in
+# 0) mkdir $2;;
+# 1) rmdir $2;;
+# *) ls $2;;
+# esac
+# exit 0

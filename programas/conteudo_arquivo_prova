@@ -1,0 +1,13 @@
+# Faça um programa que mostre o conteúdo do arquivo do programa se 
+# o número digitado junto com o programa for maior que 7 e os arquivos 
+# do diretório corrente caso contrário.
+
+#!/bin/sh
+num=$1
+if [ $num -gt 7 ]
+then
+    cat conteudo_arquivo_prova
+else
+    ls
+fi
+exit 0

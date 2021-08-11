@@ -1,0 +1,16 @@
+#!/bin/sh
+mkdir dir1
+mkdir dir2
+mkdir dir3
+case $1 in
+c*) echo "Arquivo copiado para o diretório dir1"
+    cp -r $1 dir1;;
+d*) echo "Arquivo copiado para o diretório dir2"
+    cp -r $1 dir2;;
+x*) echo "Arquivo copiado para o diretório dir3"
+    cp -r $1 dir3;;
+*) echo "Conteúdo do diretório corrente"
+    ls;;
+esac
+
+exit 0

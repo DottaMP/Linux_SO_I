@@ -1,0 +1,12 @@
+# Fazer um programa que receba um número e imprima a contagem regressiva até chegar a 5.
+
+#!/bin/sh
+CONTADOR="$1"
+while [ $CONTADOR -ge 5 ] 
+do
+    echo "$CONTADOR"
+    sleep 0.5
+    CONTADOR=$((CONTADOR-1))
+done
+
+exit 0

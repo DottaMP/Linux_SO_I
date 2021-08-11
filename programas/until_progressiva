@@ -1,0 +1,12 @@
+# Fazer um programa que receba um número e imprima a contagem progressiva até chega a 20 (usando until).
+
+#!/bin/sh
+NUM="$1"
+echo "$NUM"
+until [ $NUM -eq 20 ] 
+do
+    sleep 0.5
+    NUM=$((NUM+1))
+    echo "$NUM"
+done
+exit 0

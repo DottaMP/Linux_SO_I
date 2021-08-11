@@ -1,0 +1,20 @@
+# Fazer um programa que exiba o preço de um produto em função da quantidade.
+# Até 99, o preço é 3,50. De 100 a 199 o preço é 3,00. e acima de 200 0 preço é 2,50.
+
+#!/bin/sh
+PRECO="$1"
+if [ $PRECO -gt 0 -a $PRECO -lt 100 ]; # Valor entre 0 e 99
+    then 
+    echo ' O preço é R$3,50 '; 
+
+elif [ $PRECO -ge 100 -a $PRECO -lt 200 ]; # Valor entre 100 e 199
+    then 
+    echo ' O preço é R$3,00 ';
+
+elif [ $PRECO -ge 200 ]; # Valor maior que 200
+    then 
+    echo ' O preço é R$2,50 ';  
+else
+    echo ' Informe um valor maior que zero '; 
+fi
+exit 0

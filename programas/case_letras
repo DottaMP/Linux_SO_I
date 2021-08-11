@@ -1,0 +1,14 @@
+#Escrever um programa que receba uma palavra e se ela começar com a, b ou c, 
+#escreva com que letra ela começa. Caso contrário escreva palavra que não começa com a, b ou c.
+
+#!/bin/sh
+echo "Digite uma palavra!";
+read palavra
+case $palavra in
+a*) echo "Começa com a letra a";;
+b*) echo "Começa com a letra b";;
+c*) echo "Começa com a letra c";;
+*) echo "Não começa com as letras a, b ou c!";;
+esac
+exit 0
+

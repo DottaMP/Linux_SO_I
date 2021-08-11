@@ -1,0 +1,10 @@
+
+# Fazer um programa mostre quem é o usuário da máquina e a data atual.
+
+#!/bin/sh
+echo "Hello World"
+echo "O usuário da máquina é:"
+whoami # Comando que mostra o usuário 
+echo "A hora e a data atual é:"
+date # Comando que mostra a data
+exit 0

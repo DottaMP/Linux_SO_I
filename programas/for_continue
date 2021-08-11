@@ -1,0 +1,15 @@
+# Fazer um programa que exiba a contagem de 1 a 15, não mostrando o número 9.
+
+#!/bin/sh
+for i in $(seq 1 15) 
+do
+	if [ $i -eq 9 ] 	#Se a impressão for 9, pule. 
+	#if  [  $i  -eq  9  -o  $i  -eq  10  ] 		#Se a impressão for 9 ou 10, pule.
+	then
+		continue  #Retoma a interação do laço for
+	fi
+       
+	echo "$i"  #print $i
+done
+
+exit 0

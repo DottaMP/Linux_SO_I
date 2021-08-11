@@ -1,0 +1,25 @@
+#Faça que programa que recebe um número e o nome de dois diretórios existentes:
+#Se o número for 0: Copia todos os arquivos que começam com a letra a do primeiro diretório para o segundo.
+#Se o número for 1: Copia todos os arquivos que começam com c letra a do primeiro diretório para o segundo.
+#Se o número for 2: Mostra todos os arquivos do primeiro diretório.
+#Se o número for 3: Mostra todos os arquivos do segundo diretório.
+#Se o número for diferente dos anteriores mostra os arquivos do driver corrente
+#!/bin/sh
+num="$1"
+if [ $num -eq 0 ]; # Se 0: Copia todos os arquivos que começam com a letra a do primeiro diretório para o segundo.
+    then 
+    cp -r $2/A* $3; 
+
+elif [ $num -eq 1 ]; # Senão se 1: Copia todos os arquivos que começam com letra c do primeiro diretório para o segundo.
+    then 
+    cp -r $2/C* $3; 
+elif [ $num -eq 2 ]; # Senão se 2: Mostra todos os arquivos do primeiro diretório.
+    then 
+    ls $2; 
+elif [ $num -eq 3 ]; # Senão se 3: Mostra todos os arquivos do segundo diretório.
+    then 
+    ls $3; 
+else # Senão mostra os arquivos do diretório corrente
+    ls; 
+fi
+exit 0
